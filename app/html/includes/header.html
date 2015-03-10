@@ -1,0 +1,12 @@
+<header>
+      <a href="#" class="rightBorder paddingRight" ng-click="showDrawer = false"  
+      ng-show="tagType == null">
+        <i class="fa fa-bars colorWhite"></i></a>
+      <a id="drawerIcon" href="#drawer" class="rightBorder paddingRight" ng-click="showDrawer = true"  
+      ng-show="tagType == null">
+        <i class="fa fa-bars colorWhite"></i></a>
+      <a ng-click="goBack()" class="rightBorder paddingRight" ng-hide="tagType == null">
+        <i class="fa fa-chevron-left colorWhite"></i></a>
+
+      <span class="headerText widthAuto">{{title}}</span>
+</header>

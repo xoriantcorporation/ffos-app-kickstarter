@@ -1,0 +1,34 @@
+<section data-type="sidebar" id="sideMenu" ng-click="showDrawer=false">
+    <header>
+      <h1>FFOS Starter App</h1>
+    </header>
+    <nav>
+      <ul>
+        <li wp-hover="elementHover">
+          <a ui-sref="home" ng-class="{selectedMenu : (currentMenu=='home') }">
+            <i class="fa fa-home"></i>Home
+          </a>
+        </li> 
+		    <li wp-hover="elementHover">
+          <a ui-sref="about" ng-class="{selectedMenu : currentMenu== 'about'}">
+            <i class="fa fa-male"></i>About Me
+          </a>
+        </li>
+        <li wp-hover="elementHover">
+          <a href="#" ui-sref="contact" ng-class="{selectedMenu : currentMenu== 'contact'}">
+            <i class="fa fa-twitter"></i>Contact Me
+          </a>
+        </li>
+        <li wp-hover="elementHover">
+          <a href="#" ui-sref="restcall" ng-class="{selectedMenu : currentMenu== 'restcall'}">
+            <i class="fa fa-external-link"></i>Rest call
+          </a>
+        </li>
+        <li wp-hover="elementHover">
+          <a href="#" ui-sref="webactivity" ng-class="{selectedMenu : currentMenu== 'webactivity'}">
+            <i class="fa fa-globe"></i>Web Activity
+          </a>
+        </li>       
+      </ul>
+    </nav>
+ </section>

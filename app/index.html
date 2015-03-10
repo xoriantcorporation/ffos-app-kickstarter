@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ffosStarterApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0, width=device-width">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>FFOS Bootstrapper App</title>
+    
+    <!-- External CSS Libraries -->
+    
+    <!-- build:cssvendor scripts/css/vendor.css    -->
+    <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <!--    endbuild   -->
+
+    <!-- build:css scripts/css/app.css    -->
+    <link rel="stylesheet" href="scripts/css/headers.css">
+    <link rel="stylesheet" href="scripts/css/drawer.css">    
+    <link href="scripts/css/default.css" rel="stylesheet">
+    <link href="scripts/css/angular-csp.css" rel="stylesheet">
+    <!--    endbuild   -->
+
+</head>
+<body>
+    <!-- Use ngCsp only in case of issues related to privileged apps    -->
+    <!--body ng-csp-->
+
+    <!--    Placeholder element to inject custom views for SPA     -->
+    <ui-view></ui-view>
+
+    <!--    build:jsvendor scripts/js/vendor.js   -->
+    <script type="text/javascript" src="bower_components/angularjs/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <!--    endbuild    -->
+
+    <!--    build:js scripts/js/app.js   -->
+    <script type="text/javascript" src="scripts/js/app.js"></script>
+    <script type="text/javascript" src="scripts/js/directives/header.js"></script>
+    <script type="text/javascript" src="scripts/js/controllers/home.js"></script>
+    <script type="text/javascript" src="scripts/js/controllers/about.js"></script>
+    <script type="text/javascript" src="scripts/js/controllers/contact.js"></script>
+    <script type="text/javascript" src="scripts/js/controllers/restCall.js"></script>
+    <script type="text/javascript" src="scripts/js/controllers/webActivity.js"></script>
+    <script type="text/javascript" src="scripts/js/services/commonFactory.js"></script>
+    <!--    endbuild    -->
+
+</body>
+</html>

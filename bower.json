@@ -1,0 +1,26 @@
+{
+  "name": "ffos-starter-app-full",
+  "version": "0.1.0",
+  "authors": [
+    "Gautam Mankatti <gautam.mankatti@xoriant.com>"
+  ],
+  "description": "A starter app for Firefox OS.",
+  "main": "app/index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.1"
+  },
+  "devDependencies": {
+    "font-awesome": "~4.2.0",
+    "angularjs": "~1.3.9",
+    "angular-ui-router": "~0.2.13"
+  }
+}

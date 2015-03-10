@@ -1,0 +1,23 @@
+{
+  "name": "FFOS Starter App",
+  "description": "Starter app for Firefox OS",
+  "launch_path": "/index.html",
+  "type": "privileged",
+  "icons": {
+    "128": "/icon-128.png",
+    "256": "/icon-256.png"
+  },
+  "developer": {
+    "name": "Gautam Mankatti",
+    "url": "https://github.com/acegautam"
+  },
+  "permissions": {
+    "systemXHR": {
+      "description": "Allows anonymous (no cookies) cross-origin XHR without the target site having CORS enabled."
+    },
+    "desktop-notification": {
+      "description": "Allows to display notifications on the user's desktop."
+    }
+  },
+  "default_locale": "en"
+}

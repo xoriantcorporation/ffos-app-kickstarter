@@ -1,0 +1,244 @@
+/*body{
+	margin: 0px;
+}*/
+a{
+	color: #0AC;
+}
+.clr{
+	clear: both;
+	line-height:1;
+}
+.fa{
+	font-size: 2.2rem;	
+}
+/* [contenteditable=true]:empty:after{
+  content: "Content(tap to add text)";
+  color:gray;
+  display: block;
+} */
+.circle{
+	width: 4.5px;
+	height: 4.5px;
+	border-radius: 50%;
+	background-color: #0072A0;
+	display:inline-block;
+	position: absolute;
+	top: 50%;
+	margin-left:0.7rem;
+}
+.upperCase{
+	text-transform: uppercase;
+}
+.header, .whiteBGHeader{
+	background-color: #0072A0;	
+	width: 100%;
+	margin: 0px;	
+	padding: 0px;
+}
+
+.headerText{	
+	font-size: 2rem;
+	margin: 0;
+	padding: 0 10px;
+	position: absolute;
+	/*top:12px;		*/
+	width: 65%;
+	line-height: 5rem;
+}
+.capitalize{
+	text-transform: capitalize;
+}
+
+.headerItem, .headerCenter, .headerRight, .headerLeft,.headerCenterSmall{	
+	display: inline-block;	
+	text-align: center;	
+	padding: 12px 0;	
+	margin: 0;
+}
+
+.headerCenter, .headerCenterSmall{
+	width: 71%;
+	text-align: left;	
+	padding: 12px 0	12px 10px;	
+}
+
+.headerCenterSmall{
+	width: 56%;	
+}
+
+.headerLeft{	
+	text-align: center;
+	width: 10%;
+	padding-right: 0px;
+}
+
+.headerRight{	
+	text-align: center;	
+	width: 15%;
+	float: right;	
+}
+
+.headerLeft:hover, .headerRight:hover, .footerItem:active, .menuIcon:active, .footerItemWithText button:active{
+	/*background-color: rgba(255, 114, 160, 0.90);*/
+	/*background-color: rgba(0, 149, 209, 0.90);	*/
+	background-color: #008aaa;
+	cursor: pointer;
+}
+
+.headerRightSmall{	
+	text-align: center;	
+	width: 10%;
+}
+
+.colorWhite{
+	color: white !important;
+}
+
+.colorBlue{
+	color: #0072A0;
+}
+pre{
+	width: 90%;
+	margin: 0px auto;
+	text-align: left;
+}
+
+.rightBorder{
+	/*border-right: 1px solid rgba(0, 71, 99, 0.65);*/
+	/*background: url(../../assets/images/drawer/ui/separator.png) no-repeat right center / auto 3.1rem !important;*/
+	background-position: right center !important;
+}
+
+.leftBorder{
+	/*border-left: 1px solid rgba(0, 71, 99, 0.65);*/
+	/*background: url(../../assets/images/drawer/ui/separator.png) no-repeat left center / auto 3.1rem !important;*/
+	background-position: left center !important;
+}
+
+.noBorder{
+	background-image: none !important;
+}
+
+.bottomBorder{
+	 border-bottom: 1px solid rgba(100, 100, 100, 0.6); /*#e8f0f5;*/
+}
+
+.topBorder{
+	 border-top: 1px solid rgba(100, 100, 100, 0.6); /*#e8f0f5;*/
+}
+
+.menuItem{
+	color: white;
+	background-color: #242424;	
+	padding: 10px;
+	border-bottom: 1px solid rgba(100, 100, 100, 0.5);
+}
+
+.menuIcon{
+	width: 30px;
+	margin-left: 10px;
+	text-align: center;
+	margin-right: 5px;
+}
+
+.whiteBGHeader{
+	background-color: white;
+	color: #0072A0;
+	text-align: center;
+}
+
+.subDate{	
+	color: #888;
+	font-size: 0.7em;
+}
+
+.title{
+	padding: 0 0 5px 0;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	height: 100%;
+}
+p{
+	margin: 30px 0px 0px 0px;
+}
+section[role="region"] {
+	height: 100%;
+	background: none repeat scroll 0% 0% #FFF;
+	overflow: auto;
+	position: fixed;
+}
+
+
+/*Override for Drawer code to work. Required as target pseodo code has issues with angularjs*/
+section[role="region"].show {
+	transform: translateX(80%);
+}
+
+section[role="region"].show > header:first-child > a:first-of-type {
+  display: block;
+}
+
+section[role="region"].show > header:first-child > #drawerIcon {
+  display: none ;
+}    
+
+section[role="region"] > header:first-child {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+section[data-type="sidebar"] {
+	background: #3c3d3f;
+	font-size: 8rem;
+}
+
+section[data-type="sidebar"] > header {
+	background: #1e1f20;
+}
+
+section[data-type="sidebar"] > header .fa-wordpress{
+    font-size: 3rem;
+    padding: 10px 0px;
+}
+
+section[data-type="sidebar"] > nav {
+	max-height: calc(100% - 5rem);
+}
+
+section[data-type="sidebar"] > nav > ul > li > a{
+	border-bottom: none;
+	text-indent: 0;
+	font-size: 1.8rem;
+}
+section[data-type="sidebar"] > nav > ul > li > a > img,  section[data-type="sidebar"] > nav i{
+	margin-left: 3%;
+	width: 30px;
+}
+.actLink{
+	background: #0072a0;
+	border-right: solid 1px #0C5C7D;
+}
+
+section[data-type="sidebar"] > nav > ul > li > a:hover {
+	background: #0074a2;
+}
+.selectedMenu {
+	background: #0074a2;
+}
+
+[role="toolbar"] li{
+	line-height: 1rem;
+}
+[role="toolbar"] button{
+	width:100%;
+}
+.avatar{
+	/*background-image: url("paper.gif");*/
+}
