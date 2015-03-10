@@ -1,4 +1,4 @@
-# Firefox OS Application Kickstarter
+# Xoriant Application Kickstarter
 > A combination of modular, pluggable, re-usable components for creating open web apps, specialized for Firefox OS app development
 
 Built using Angular JS and Firefox OS building blocks styles. Includes the following components out-of-the-box:
@@ -33,7 +33,7 @@ Power features included:
 
 Download the entire source code using either of the following:
 
-* **Git**: `git clone https://github.com/acegautam/ffos-starter-app-full.git` OR
+* **Git**: `git clone https://github.com/xoriantcorporation/ffos-app-kickstarter` OR
 * **Zip**: Simply download the zip file from the link provided on the right. Extract contents.
 
 Install libraries
